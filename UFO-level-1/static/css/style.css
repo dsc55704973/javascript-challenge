@@ -49,7 +49,7 @@ body {
   bottom: 5px;
   left: 150px;
   width: 35px;
-  color: white;
+  color: greenyellow;
 }
 
 /* Adding styles to the aside and filter form */
@@ -95,10 +95,10 @@ select {
 .hero {
   position: relative;
   height: 550px;
-  padding: 20px;
+  padding: 20px; 
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("../images/mars.jpeg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
