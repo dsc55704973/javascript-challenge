@@ -13,9 +13,13 @@ tableData.forEach(function(UFOreport) {
 });
 
 // event listener to filter data by date input
-var datetimeFilter = d3.select("#datetime", CallBackFunction);
-datetimeFilter.on("change", function() {
-    // apply filter to table
-    var filteredData = tabledata.filter(datetimeFilter);
-    return filteredData;
-  });
+var inputElement = d3.select("#datetime");
+var dateInput = inputElement.property("value");
+var filterButton = d3.select("#filter-btn");
+filterButton.on("click", datetimeFilter);
+
+function datetimeFilter() {
+  d3.event.preventDefault();
+  return datetime.datetime == dateInput;
+  };
+var filteredTable = tableData.filter(datatimeFilter);
